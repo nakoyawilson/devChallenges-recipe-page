@@ -38,7 +38,7 @@ body {
 .header-section,
 .main-section,
 .footer-section {
-  width: min(100%, 60.5625rem);
+  width: min(93.8666%, 60.5625rem);
   margin-inline: auto;
 }
 
@@ -76,14 +76,18 @@ body {
 .main-image {
   width: 100%;
   height: auto;
+  border-radius: 12px;
 }
 
 /* Main Section */
 .main-section {
+  margin-bottom: 5.8125rem;
+}
+.main-container {
   display: flex;
   justify-content: space-between;
-  gap: 9.6875rem;
-  margin-bottom: 5.8125rem;
+  gap: 2rem;
+  margin-bottom: 3.5625rem;
 }
 
 .section-heading {
@@ -122,6 +126,10 @@ input[type="checkbox"] {
   height: 1.3125rem;
 }
 
+.checkbox-text {
+  width: min(100%, 34.625rem);
+}
+
 .emphasized {
   font-weight: 700;
 }
@@ -142,7 +150,7 @@ input[type="checkbox"] {
 }
 
 .step:last-of-type {
-  margin-bottom: 3.5625rem;
+  margin-bottom: 0;
 }
 
 .step-number {
@@ -254,4 +262,103 @@ input[type="checkbox"] {
 .attribution a:hover {
   color: var(--orange);
   text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 650px) {
+  .title {
+    font-size: 1.5rem;
+    margin: 2rem 0 0.75rem;
+  }
+
+  .header-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .header-text {
+    font-size: 0.75rem;
+    width: min(100%, 20rem);
+    margin-bottom: 1.5625rem;
+  }
+
+  .main-section {
+    margin-bottom: 8.0625rem;
+  }
+
+  .main-container {
+    flex-direction: column-reverse;
+    gap: 1.890625rem;
+    margin-bottom: 1.625rem;
+  }
+
+  .times {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: flex-start;
+  }
+
+  .details {
+    margin-bottom: 0;
+    gap: 0.328125rem;
+  }
+
+  .details:nth-of-type(1) {
+    grid-column: 1 / 4;
+    padding-bottom: 1.296875rem;
+  }
+
+  .yield-heading,
+  .time-heading {
+    font-size: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .yield-amount,
+  .time-amount {
+    font-size: 0.625rem;
+  }
+
+  .yield-icon {
+    transform: scale(0.75);
+  }
+
+  .clock-icon {
+    transform: scale(0.75);
+  }
+
+  .source {
+    font-size: 0.75rem;
+  }
+
+  .section-heading {
+    font-size: 1.125rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+  }
+
+  .checkbox-container {
+    gap: 0.5rem;
+  }
+
+  .checkbox-text {
+    font-size: 0.875rem;
+  }
+
+  .graham-cracker {
+    margin: 0.8125rem 0 1.4375rem;
+  }
+
+  .cheesecake {
+    margin: 1.5625rem 0 1.5rem;
+  }
+
+  .instructions-heading {
+    margin: 1.875rem 0 1.75rem;
+  }
 }
