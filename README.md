@@ -41,6 +41,7 @@
 
 - HTML
 - CSS
+- JavaScript
 
 ## Features
 
