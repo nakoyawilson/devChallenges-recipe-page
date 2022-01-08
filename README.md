@@ -29,6 +29,7 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
+- [Useful Links](#useful-links)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
@@ -50,6 +51,10 @@ This application/site was created as a submission to a [devChallenges](https://d
 - [x] User story: I can see a recipe with ingredients and instructions
 - [x] User story: I can select a checkbox if I have the ingredients
 - [x] User story: I can see the number of servings, baking times
+
+## Useful Links
+
+- [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) - This website was helpful for learning how to use local storage to save the states of the checkboxes.
 
 ## Contact
 
